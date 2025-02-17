@@ -83,5 +83,7 @@ aside .noticia {
 
 .noticias {
     display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-columns: 32.6% 32.6% 32.6%;
+    column-gap: 1%;
+    row-gap: 5%;
 }
