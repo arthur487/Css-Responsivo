@@ -31,6 +31,7 @@ header {
     width: 300px;
     top: 100%;
 }
+
 .Menu > li {
     float: left;
     list-style: none;
@@ -59,6 +60,9 @@ header {
 .noticia img {
     max-width: 100%;
 }
+.destaque {
+    margin-bottom: 56px;
+}
 
 .destaque .noticia a {
     display: flex;
@@ -86,4 +90,78 @@ aside .noticia {
     grid-template-columns: 32.6% 32.6% 32.6%;
     column-gap: 1%;
     row-gap: 5%;
+}
+.Button-menu {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    .conteudo {
+        display: block;
+    }
+    .conteudo {
+        max-width: 90%;
+    }
+    
+    
+    .destaque .noticia a {
+    display: block;
+    font-size: 1.5em;
+    }
+
+    .destaque .noticia img {
+    margin-right: 0px;
+    }
+    .noticias {
+        display: block;
+    }
+    .noticias .noticia {
+        margin-bottom: 32px;
+    }
+    aside {
+        padding-left: 0px;
+    }
+    header div.container {
+        flex-direction: column;
+    }
+    .Submenu {
+        display: block;
+        width: 100%;
+        position: relative;
+        border: none;
+    }
+    .Menu > li {
+    clear: both;
+    }
+    .Menu {
+        display: none;
+    }
+    .Button-menu {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 16px;
+    }
+    .Button-menu button {
+        padding: 8px;
+    }
+    .Submenu li {
+        display: block;
+        padding: 8px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .Button-menu {
+        display: none;
+    }
+    .noticias {
+        display: grid;
+        grid-template-columns: 49% 49%;
+        column-gap: 1%;
+        
+    }
 }
